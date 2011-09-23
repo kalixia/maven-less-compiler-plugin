@@ -34,16 +34,20 @@ public class LessMojo extends AbstractMojo {
      */
     private File webappSourceDirectory;
 
+    @SuppressWarnings("unchecked")
     public void execute() throws MojoExecutionException, MojoFailureException {
-        getLog().info("Searching for LESS files in " + webappSourceDirectory);
         LessEngine engine = new LessEngine();
         try {
-            @SuppressWarnings("unchecked")
-            List<File> lessFiles = FileUtils.getFiles(
-                    webappSourceDirectory,
-                    getCommaSeparatedList(includes.getIncludes()),
-                    getCommaSeparatedList(includes.getExcludes())
-            );
+            List<File> lessFiles;
+            if (includes != null) {
+                lessFiles = FileUtils.getFiles(
+                        webappSourceDirectory,
+                        getCommaSeparatedList(includes.getIncludes()),
+                        getCommaSeparatedList(includes.getExcludes())
+                );
+            } else {
+                lessFiles = FileUtils.getFiles(webappSourceDirectory, "**/*.less", "");
+            }
             for (File lessFile : lessFiles) {
                 String cssFileLocation = lessFile.getPath().replace(".less", ".css").replace(webappSourceDirectory.getPath(), "");
                 File cssFile = new File(outputDirectory, cssFileLocation);
