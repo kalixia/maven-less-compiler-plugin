@@ -1,0 +1,24 @@
+-classpath
+'/Users/jeje/Documents/Development/Kalixia/maven-less-compiler-plugin/target/classes:/Users/jeje/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar:/Users/jeje/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar:/Users/jeje/.m2/repository/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar:/Users/jeje/.m2/repository/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar:/Users/jeje/.m2/repository/rhino/js/1.6R7/js-1.6R7.jar:/Users/jeje/.m2/repository/com/asual/lesscss/lesscss-engine/1.1.4/lesscss-engine-1.1.4.jar:/Users/jeje/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar:/Users/jeje/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.4/plexus-component-annotations-1.5.4.jar:/Users/jeje/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar:/Users/jeje/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/jeje/.m2/repository/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.jar:/Users/jeje/.m2/repository/org/apache/maven/maven-model/3.0/maven-model-3.0.jar'
+-encoding
+'MacRoman'
+-protected
+-sourcepath
+'/Users/jeje/Documents/Development/Kalixia/maven-less-compiler-plugin/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2011 <a href="http://www.kalixia.com">Kalixia, SARL.</a>. All Rights Reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/jeje/Documents/Development/Kalixia/maven-less-compiler-plugin/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'maven-less-compiler-plugin 0.0.1 API'
+-link
+'http://java.sun.com/javase/6/docs/api'
+-use
+-version
+-windowtitle
+'maven-less-compiler-plugin 0.0.1 API'

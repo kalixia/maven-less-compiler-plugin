@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>maven-less-compiler-plugin</name>
+      <prefix>less-compiler</prefix>
+      <artifactId>maven-less-compiler-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>
