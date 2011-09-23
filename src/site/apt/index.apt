@@ -1,0 +1,40 @@
+ -----
+Welcome to maven-less-compiler-plugin module
+ ------
+Jerome Bernard
+ ------
+23 September 2011
+ ------
+
+Welcome to maven-less-compiler-plugin module
+
+* Introduction
+
+ {{{http://lesscss.org/}less}} is a great way to build CSS. The <<<maven-less-compiler-plugin>>> Maven Plugin
+ is meant to provide an easy way to build your CSS files from Less ones at build time.
+
+* Usage
+
+ By default the plugin searches through your <<<src/main/webapp>>> folder for any <<<.less>>> file.
+ Each Less file found is then compiled into CSS and included as part of your regular WAR build.
+
+ Here is an annotated POM example:
+
+%{include|source=snippets/pom.xml|id=maven-less-compiler-plugin-simple|show-gutter=false}
+
+* Advanced Usage
+
+ If you are building {{{http://twitter.github.com/bootstrap/index.html}Twitter's Bootstrap framework}},
+ you'll need to make sure that you only include the <<<bootstrap.less>>> as the other less files are actually
+ included from this one. This can easily be done:
+
+%{include|source=snippets/pom.xml|id=maven-less-compiler-plugin-bootstrap|show-gutter=false}
+
+* Maven Repository
+
+ Don't forget to declare the Maven repository so that Maven can locate this plugin:
+
+%{include|source=snippets/pom.xml|id=maven-less-compiler-plugin-repository|show-gutter=false}
+
+
+
