@@ -46,31 +46,16 @@
         </plugins>
     </build>
 
-    <repositories>
-        <!-- START SNIPPET: maven-less-compiler-plugin-repository -->
-        <repository>
+    <!-- START SNIPPET: maven-less-compiler-plugin-repository -->
+    <pluginRepositories>
+        <pluginRepository>
             <id>maven-less-compiler-plugin</id>
+            <name>maven-less-compiler-plugin</name>
             <url>http://kalixia.github.com/maven-less-compiler-plugin/repository/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-        <!-- END SNIPPET: maven-less-compiler-plugin-repository -->
-        <repository>
-            <id>tapestry-releases</id>
-            <url>https://repository.apache.org/content/repositories/releases/</url>
-            <releases><enabled>true</enabled></releases>
             <snapshots><enabled>false</enabled></snapshots>
-        </repository>
-        <repository>
-            <id>tapestry-snapshots</id>
-            <url>http://repository.apache.org/snapshots</url>
-            <releases><enabled>false</enabled></releases>
-            <snapshots><enabled>true</enabled></snapshots>
-        </repository>
-    </repositories>
+            <releases><enabled>true</enabled></releases>
+        </pluginRepository>
+    </pluginRepositories>
+    <!-- END SNIPPET: maven-less-compiler-plugin-repository -->
 
 </project>
